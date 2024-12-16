@@ -12,7 +12,7 @@ def generate_report():
     # Construct the path to the base directory
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     template_dir = os.path.join(base_dir, 'template')
-    output_dir = os.path.join(base_dir, 'output')
+    output_dir = os.path.join(base_dir, 'docs')
     output_report_path = os.path.join(output_dir, 'report.html')
     static_dir = os.path.join(base_dir, 'static')
     output_static_dir = os.path.join(output_dir, 'static')

@@ -14,7 +14,7 @@ output_sloop_pivot_file = 'data/sloop_pivot.csv'
 output_aandeel_flats_pivot_file = 'data/aandeel_flats_pivot.csv'
 
 # Output directory
-output_dir = 'output'
+output_dir = 'docs'
 output_data_dir = os.path.join(output_dir, 'data')
 os.makedirs(output_data_dir, exist_ok=True)
 
