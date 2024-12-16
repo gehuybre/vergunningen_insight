@@ -1,0 +1,97 @@
+{
+  "layout": {
+    "plot_bgcolor": "rgba(0,0,0,0)",
+    "paper_bgcolor": "rgba(0,0,0,0)",
+     "margin": {
+      "l": 0,
+      "r": 0,
+      "t": 30,
+      "b": 70
+    },
+    "font": {
+      "family": "Inter, sans-serif",
+      "size": 14,
+      "color": "var(--text)"
+    },
+    "title": {
+      "x": 0.5,
+      "font": {
+        "size": 20,
+        "color": "var(--text)",
+        "family": "Inter, sans-serif"
+      }
+    },
+    "legend": {
+      "yanchor": "bottom",
+      "y": 0.95,
+      "xanchor": "center",
+      "x": 0.5,
+      "orientation": "h",
+      "font": {
+        "size": 14,
+        "color": "var(--text)"
+      },
+      "title": {
+        "text": null
+      },
+      "bgcolor": "rgba(0,0,0,0)"
+    },
+    "xaxis": {
+      "showgrid": false,
+      "zeroline": false,
+      "showline": false,
+      "tickangle": -45,
+      "tickfont": {
+        "size": 12,
+        "color": "var(--text)"
+      },
+      "automargin": true
+    },
+    "yaxis": {
+      "showgrid": false,
+      "zeroline": false,
+      "showline": false,
+      "tickfont": {
+        "size": 12,
+        "color": "var(--text)"
+      },
+      "automargin": true
+    },
+    
+    "annotations": [
+      {
+        "x": 0,
+        "y": -0.5,
+        "xref": "paper",
+        "yref": "paper",
+        "text": "Bron: Omgevingsloket, verwerking Embuild Vlaanderen",
+        "showarrow": false,
+        "font": {
+          "size": 10,
+          "color": "var(--text)",
+          "family": "Inter, sans-serif"
+        }
+      }
+    ]
+  },
+  "traces": {
+    "line": [
+      {
+        "color": "var(--primary)",
+        "width": 3,
+        "marker": {
+          "symbol": "circle",
+          "size": 6
+        }
+      },
+      {
+        "color": "var(--secondary)",
+        "width": 3,
+        "marker": {
+          "symbol": "circle",
+          "size": 6
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vergunningen Prognose Rapport</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <!-- Intro Section -->
+  <section class="intro-section">
+    <div class="content-container">
+        <h1 class="section-title">Vergunningen Prognose Rapport</h1>
+        <p>Dit rapport visualiseert recente trends in vergunningen voor nieuwbouw, renovatie en sloop.</p>
+    </div>
+  </section>
+    <div class="content-container">
+        <!-- Section: Nieuwbouw -->
+        <section class="reveal">
+             <div class="section-title-container">
+                <h2 class="section-title">Nieuwbouw</h2>
+            </div>
+            <div class="chart-and-text-container">
+                <div class="chart-container grafiek-container">
+                   {{ nieuwbouw_graph | safe }}
+                </div>
+                 <div class="text-explanation">
+                    <p>
+                       Hieronder ziet u de trends in vergunningsaanvragen voor nieuwbouw. De grafiek illustreert het aantal afgegeven vergunningen per kwartaal, opgesplitst naar het type woning: eengezinswoningen en meergezinswoningen.
+                    </p>
+                 </div>
+           </div>
+        </section>
+
+        <!-- Section: Renovatie -->
+        <section class="reveal">
+            <div class="section-title-container">
+                <h2 class="section-title">Renovatie</h2>
+           </div>
+           <div class="chart-and-text-container">
+                 <div class="chart-container grafiek-container">
+                   {{ renovatie_graph | safe }}
+                </div>
+                <div class="text-explanation">
+                    <p>
+                        Deze grafiek toont de trends in vergunningsaanvragen voor renovatieprojecten. Het geeft het aantal afgegeven vergunningen per kwartaal weer, onderverdeeld in eengezins- en meergezinswoningen.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Sloop -->
+        <section class="reveal">
+             <div class="section-title-container">
+                 <h2 class="section-title">Sloop</h2>
+            </div>
+            <div class="chart-and-text-container">
+                <div class="chart-container grafiek-container">
+                     {{ sloop_graph | safe }}
+                </div>
+                <div class="text-explanation">
+                    <p>
+                        Hier is het aantal sloopvergunningen te zien die per kwartaal werden afgegeven. Deze grafiek visualiseert het aantal afgegeven vergunningen voor sloopprojecten van gebouwen, opgesplitst in de functies van eengezinswoningen en meergezinswoningen.
+                    </p>
+                </div>
+             </div>
+        </section>
+         <!-- Section: Aandeel flats -->
+        <section class="reveal">
+            <div class="section-title-container">
+                <h2 class="section-title">Aandeel flats</h2>
+            </div>
+            <div class="chart-and-text-container">
+                <div class="chart-container grafiek-container">
+                    {{ aandeel_flats_graph | safe }}
+                </div>
+                  <div class="text-explanation">
+                      <p>
+                          Deze grafiek toont het aandeel van appartementen ten opzichte van andere gebouwcategorieën. Het geeft een kwartaaloverzicht van het aantal vergunningen voor appartementsgebouwen, vergeleken met andere woningtypes.
+                      </p>
+                  </div>
+              </div>
+        </section>
+    </div>
+    <script src="static/js/animations.js"></script>
+     <script src="static/js/time-series-reveal.js"></script>
+     <script src="static/js/color-scheme.js"></script>
+</body>
+</html>
